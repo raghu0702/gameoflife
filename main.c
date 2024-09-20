@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
         print_grid(grid);
         usleep(300000);
         if (gen < target_generation) {
-            compute_next_generation(grid, next_grid);
+            simulateGen(grid, next_grid);
             char **temp = grid;
             grid = next_grid;
             next_grid = temp;
